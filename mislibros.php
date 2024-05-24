@@ -1,3 +1,11 @@
+<?php
+require_once 'database.php';
+require_once 'libro.php';
+
+// Obtener todos los libros de la base de datos
+$libros = Libro::buscarLibrosPorUsuario();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
