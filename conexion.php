@@ -1,7 +1,7 @@
 <?php
 require_once("config.php");
 $servername='LocalHost';
-$database='libros';
+$database='biblioteca';
 $username='root';
 $password='';
 try {

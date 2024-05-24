@@ -24,19 +24,6 @@ header {
     margin-bottom: 20px; /* Añade un margen inferior para separarlo del contenido */
 }
 
-/* Estilos para el formulario de búsqueda */
-#search-form {
-    margin-left: auto; /* Mueve el formulario de búsqueda al extremo derecho */
-}
-
-#search-input {
-    border-radius: 20px; /* Agrega bordes redondeados al campo de búsqueda */
-}
-
-#search-button {
-    border-radius: 20px; /* Agrega bordes redondeados al botón de búsqueda */
-}
-
 /* Estilos para la lista de libros */
 .container {
     margin-top: 20px; /* Añade un margen superior para separar la lista de libros del encabezado */
@@ -46,6 +33,16 @@ h2 {
     margin-bottom: 20px; /* Añade un margen inferior para separar el título de la lista de libros */
 }
 
-.card {
-    margin-bottom: 20px; /* Añade un margen inferior para separar las tarjetas de libros */
+ul {
+    list-style-type: none; /* Quita los marcadores de la lista */
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px; /* Añade un pequeño margen inferior a cada elemento de la lista */
+}
+
+/* Estilos para los botones de acción */
+.btn {
+    margin-right: 5px; /* Añade un pequeño margen derecho a cada botón */
 }

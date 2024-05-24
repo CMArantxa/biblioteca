@@ -110,5 +110,33 @@ public static function buscarLibrosPorTitulo($titulo) {
     // Devolver array de objetos Libro
     return $libros;
 }
+public static function buscarLibrosPorUsuario($usuario_id) {
+    // Conectar a la base de datos
+    $conexion = Database::conectar();
+    
+    // Consulta SQL para buscar libros por ID de usuario
+    $consulta = "SELECT * FROM libros WHERE usuario_id = ?";
+    
+    // Preparar la consulta
+    $stmt = $conexion->prepare($consulta);
+    
+    // Ejecutar la consulta con el ID de usuario proporcionado
+    $stmt->execute([$usuario_id]);
+    
+    // Array para almacenar objetos Libro
+    $libros = array();
+    
+    // Recorrer los resultados y crear objetos Libro
+    while ($fila = $stmt->fetch(PDO::FETCH_ASSOC)) {
+        $libro = new Libro($fila['titulo'], $fila['autor'], $fila['descripcion'], $fila['portada']);
+        $libros[] = $libro;
+    }
+    
+    // Desconectar la base de datos
+    Database::desconectar();
+    
+    // Devolver array de objetos Libro
+    return $libros;
+}
 }
 ?>

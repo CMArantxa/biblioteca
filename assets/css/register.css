@@ -1,0 +1,61 @@
+/* Estilos para la página de registro */
+
+/* Utiliza el estilo general del cuerpo y la fuente Pacifico */
+body {
+    background-color: #f0f0f0; /* Cambia el color de fondo si es necesario */
+}
+
+/* Puedes mantener el estilo del encabezado si deseas */
+header {
+    /* Estilos del encabezado */
+}
+
+/* Ajusta los estilos para el formulario de registro */
+.register-form {
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    text-align: center;
+}
+
+.register-form h2 {
+    margin-bottom: 20px;
+}
+
+.register-form input[type="text"],
+.register-form input[type="password"],
+.register-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.register-form button {
+    background-color: #28a745;
+    color: #fff;
+    cursor: pointer;
+}
+
+.register-form button:hover {
+    background-color: #218838;
+}
+
+.register-form p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.register-form p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.register-form p a:hover {
+    text-decoration: underline;
+}
